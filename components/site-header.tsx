@@ -23,7 +23,7 @@ export function SiteHeader() {
         {/* Brand name - left */}
         <Link
           href="/"
-          className="text-base font-bold tracking-[0.15em] text-white uppercase md:text-lg"
+          className="font-serif text-base font-bold tracking-[0.15em] text-white uppercase md:text-lg"
         >
           THE KITS COMPANY
         </Link>
@@ -39,7 +39,7 @@ export function SiteHeader() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-full px-5 py-2 text-sm font-medium tracking-wide transition-colors ${isActive
+                className={`font-serif rounded-full px-5 py-2 text-sm font-medium tracking-wide transition-colors ${isActive
                     ? 'bg-[#c4573a] text-white'
                     : 'text-white/70 hover:text-white'
                   }`}
@@ -83,7 +83,7 @@ export function SiteHeader() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`rounded-full px-5 py-2.5 text-base font-medium tracking-wide transition-colors w-fit ${isActive
+                  className={`font-serif rounded-full px-5 py-2.5 text-base font-medium tracking-wide transition-colors w-fit ${isActive
                       ? 'bg-[#c4573a] text-white'
                       : 'text-white/70 hover:text-white'
                     }`}
